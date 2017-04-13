@@ -12,6 +12,8 @@ go get github.com/mingrammer/go-todo-rest-api-example
 cd go-todo-rest-api-example
 go build
 ./go-todo-rest-api-example
+
+# API Endpoint : http://127.0.0.1:3000
 ```
 
 ## API
