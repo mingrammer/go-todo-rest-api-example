@@ -20,25 +20,25 @@ go build
 * `GET` : Get all projects
 * `POST` : Create a new project
 
-#### /projects/:titld
+#### /projects/:title
 * `GET` : Get a project
 * `PUT` : Update a project
 * `DELETE` : Delete a project
 
-#### /projects/:titld/archive
+#### /projects/:title/archive
 * `PUT` : Archive a project
 * `DELETE` : Restore a project 
 
-#### /projects/:titld/tasks
+#### /projects/:title/tasks
 * `GET` : Get all tasks of a project
 * `POST` : Create a new project
 
-#### /projects/:titld/tasks/:id
+#### /projects/:title/tasks/:id
 * `GET` : Get a project of a project
 * `PUT` : Update a project of a project
 * `DELETE` : Delete a project of a project
 
-#### /projects/:titld/tasks/:id/complete
+#### /projects/:title/tasks/:id/complete
 * `PUT` : Complete a task of a project
 * `DELETE` : Undo a task of a project
 
