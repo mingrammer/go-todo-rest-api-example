@@ -7,7 +7,24 @@ It is a just simple tutorial or example for making simple RESTful API with Go us
 ```bash
 # Download this project
 go get github.com/mingrammer/go-todo-rest-api-example
+```
 
+Before running API server, you should set the database config with yours or set the your database config with my values on [config.go](https://github.com/mingrammer/go-todo-rest-api-example/blob/master/config.go)
+```go
+func GetConfig() *Config {
+	return &Config{
+		DB: &DBConfig{
+			Dialect:  "mysql",
+			Username: "guest",
+			Password: "Guest0000!",
+			Name:     "todoapp",
+			Charset:  "utf8",
+		},
+	}
+}
+```
+
+```bash
 # Build and Run
 cd go-todo-rest-api-example
 go build
@@ -33,7 +50,7 @@ go build
 
 #### /projects/:title/tasks
 * `GET` : Get all tasks of a project
-* `POST` : Create a new project
+* `POST` : Create a new task in a project
 
 #### /projects/:title/tasks/:id
 * `GET` : Get a project of a project
@@ -50,3 +67,4 @@ go build
 - [ ] Support Authentication with user for securing the APIs.
 - [ ] Make convenient wrappers for creating API handlers.
 - [ ] Write the tests for all APIs.
+- [ ] Organize the code with packages
