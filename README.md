@@ -9,7 +9,7 @@ It is a just simple tutorial or example for making simple RESTful API with Go us
 go get github.com/mingrammer/go-todo-rest-api-example
 ```
 
-Before running API server, you should set the database config with yours or set the your database config with my values on [config.go](https://github.com/mingrammer/go-todo-rest-api-example/blob/master/config.go)
+Before running API server, you should set the database config with yours or set the your database config with my values on [config.go](https://github.com/mingrammer/go-todo-rest-api-example/blob/master/config/config.go)
 ```go
 func GetConfig() *Config {
 	return &Config{
@@ -31,6 +31,21 @@ go build
 ./go-todo-rest-api-example
 
 # API Endpoint : http://127.0.0.1:3000
+```
+
+## Structure
+```
+├── app
+│   ├── app.go
+│   ├── handler          // Our API core handlers
+│   │   ├── common.go    // Common response functions
+│   │   ├── projects.go  // APIs for Project model
+│   │   └── tasks.go     // APIs for Task model
+│   └── model
+│       └── model.go     // Models for our application
+├── config
+│   └── config.go        // Configuration
+└── main.go
 ```
 
 ## API
@@ -67,4 +82,4 @@ go build
 - [ ] Support Authentication with user for securing the APIs.
 - [ ] Make convenient wrappers for creating API handlers.
 - [ ] Write the tests for all APIs.
-- [ ] Organize the code with packages
+- [x] Organize the code with packages
