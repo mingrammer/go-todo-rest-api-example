@@ -68,9 +68,9 @@ go build
 * `POST` : Create a new task in a project
 
 #### /projects/:title/tasks/:id
-* `GET` : Get a project of a project
-* `PUT` : Update a project of a project
-* `DELETE` : Delete a project of a project
+* `GET` : Get a task of a project
+* `PUT` : Update a task of a project
+* `DELETE` : Delete a task of a project
 
 #### /projects/:title/tasks/:id/complete
 * `PUT` : Complete a task of a project
